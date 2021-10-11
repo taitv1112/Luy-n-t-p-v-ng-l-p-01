@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị ra 20 số trong dãy fibonacci đầu tiên</title>
+</head>
+<body>
+    <script>
+//F(n) = F(n-1) + F(n-2)
+        function fibonacci(num){
+            let a = 1, b = 0 , temp;
+            while (num >= 0){
+                temp = a ;
+                a = a+b;
+                document.write(a+"-");
+                b= temp;
+                num--;
+            }
+        }
+        let numbers= prompt("Nhập số lượng số trong dãy fibonacci");
+        numbers = fibonacci(numbers);
+
+
+    </script>
+</body>
+</html>
