@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của một số nguyên dương</title>
+</head>
+<body>
+<script>
+    //n! = n x (n - 1) x (n-2) .... 4 x 3 x 2 x 1
+    let n = +prompt("Nhập số cần tính giai thừa ")
+    function factorial(x) {
+        let factorial =1 ;
+        for(i=1;i<=n;i++){
+            factorial *=i ;
+        }
+        document.write("Gia thừa bằng: " + factorial);
+
+    }
+    let nFactorial = factorial(n);
+
+</script>
+</body>
+</html>
